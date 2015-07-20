@@ -1,0 +1,34 @@
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:727) - Adding routes from builder: Routes: []
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2418) - Apache Camel 2.15.2 (CamelContext: UnJob) is starting
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:2499) - Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@2a5ca609, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@20e2cbe0, ApplicationContextClassLoader=null
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:387) - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@6b67034 to resolve component with name: file
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:562) - file://csv converted to endpoint: Endpoint[file://csv] by component: org.apache.camel.component.file.FileComponent@52aa2946
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:562) - file://json?autoCreate=true converted to endpoint: Endpoint[file://json?autoCreate=true] by component: org.apache.camel.component.file.FileComponent@52aa2946
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2633) - AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2643) - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:3089) - Warming up route id: route1 having autoStartup=true
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:3147) - Route: route1 >>> EventDrivenConsumerRoute[Endpoint[file://csv] -> Channel[sendTo(Endpoint[file://json?autoCreate=true])]]
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:3151) - Starting consumer (order: 1000) on route: route1
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:3164) - Route: route1 started and consuming from: Endpoint[file://csv]
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2453) - Total 1 routes, of which 1 is started.
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2454) - Apache Camel 2.15.2 (CamelContext: UnJob) started in 0.307 seconds
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2660) - Apache Camel 2.15.2 (CamelContext: UnJob) is shutting down
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2745) - Apache Camel 2.15.2 (CamelContext: UnJob) uptime 0.321 seconds
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2746) - Apache Camel 2.15.2 (CamelContext: UnJob) is shutdown in 0.011 seconds
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:727) - Adding routes from builder: Routes: []
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2418) - Apache Camel 2.15.2 (CamelContext: UnJob) is starting
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:2499) - Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@1ddf84b8, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@1139b2f3, ApplicationContextClassLoader=null
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:387) - Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@323b36e0 to resolve component with name: file
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:562) - file://csv converted to endpoint: Endpoint[file://csv] by component: org.apache.camel.component.file.FileComponent@5ffead27
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:562) - file://json?autoCreate=true converted to endpoint: Endpoint[file://json?autoCreate=true] by component: org.apache.camel.component.file.FileComponent@5ffead27
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2633) - AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2643) - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:3089) - Warming up route id: route2 having autoStartup=true
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:3147) - Route: route2 >>> EventDrivenConsumerRoute[Endpoint[file://csv] -> Channel[sendTo(Endpoint[file://json?autoCreate=true])]]
+[juin 30 15:30:05] DEBUG (DefaultCamelContext.java:3151) - Starting consumer (order: 1000) on route: route2
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:3164) - Route: route2 started and consuming from: Endpoint[file://csv]
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2453) - Total 1 routes, of which 1 is started.
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2454) - Apache Camel 2.15.2 (CamelContext: UnJob) started in 0.062 seconds
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2660) - Apache Camel 2.15.2 (CamelContext: UnJob) is shutting down
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2745) - Apache Camel 2.15.2 (CamelContext: UnJob) uptime 0.072 seconds
+[juin 30 15:30:05] INFO  (DefaultCamelContext.java:2746) - Apache Camel 2.15.2 (CamelContext: UnJob) is shutdown in 0.010 seconds
