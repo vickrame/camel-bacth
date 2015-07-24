@@ -6,6 +6,7 @@ package com.ujoodha.main;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.activemq.camel.component.ActiveMQComponent;
 import org.apache.camel.impl.SimpleRegistry;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -21,6 +22,7 @@ import com.ujoodha.common.exception.FunctionalException;
 import com.ujoodha.config.CustomCamelContext;
 import com.ujoodha.config.PoolConnextionMongo;
 import com.ujoodha.config.routes.CustomRouteBuilder;
+import com.ujoodha.config.routes.FileToAMQPRoute;
 import com.ujoodha.config.routes.FileToElasticRouteBuilder;
 import com.ujoodha.config.routes.FileToFileRoute;
 import com.ujoodha.config.routes.FileToMongoRouteBuilder;
@@ -140,7 +142,9 @@ public class BatchMain {
 			case "filerabbit":
 				copyFileToRabbit(nomJob);
 				break;
-
+			case "amqp":
+				copyFileToAMQP(nomJob);
+				break;
 			default:
 				break;
 			}
@@ -156,6 +160,27 @@ public class BatchMain {
 			}
 
 		}
+	}
+
+	private static void copyFileToAMQP(String nomJob)
+			throws FunctionalException, IOException, TimeoutException {
+		CustomCamelContext context = new CustomCamelContext(nomJob);
+
+		ActiveMQComponent component = new ActiveMQComponent();
+
+		component.setBrokerURL("tcp://localhost:61616");
+		component.setUserName("admin");
+		component.setPassword("admin");
+
+		context.addComponent("activemq", component);
+
+		CustomRouteBuilder builderRoute = new FileToAMQPRoute();
+		// try {
+		context.doJob(builderRoute);
+		// } catch (FunctionalException e) {
+		// TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
 	}
 
 	private static void copyFileToRabbit(String nomJob)

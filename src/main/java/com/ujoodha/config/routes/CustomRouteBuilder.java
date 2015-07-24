@@ -79,11 +79,15 @@ public abstract class CustomRouteBuilder extends RouteBuilder {
 
 	protected DataFormat buildDataCSV() {
 		final CsvDataFormat format = new CsvDataFormat();
-		// format.setUseMaps(true);
-		// format.setDelimiter(';');
-		// format.setHeader(new String[] { "nom", "prenom", "age", "sexe", "id"
-		// });
-		// format.setHeaderDisabled(true);
+		format.setUseMaps(true);
+		format.setHeader(new String[] { "IDPLANB_DM", "NEMP", "LPRNEMP",
+				"LNOMEMP", "CEMP", "LEMP", "CTYPCNT", "LTYPCNT", "CUTR",
+				"LUTR", "CEQP", "LEQP", "CSEC", "LSEC", "CENT", "LENT",
+				"NEMPMGRENT", "CTYPENT", "LTYPENT", "CREG", "LREG", "CFIL",
+				"LFIL", "DDEBVAL", "DFINVAL", "DMAJENR", "HMAJENR", "CFLUAUD",
+				"DFINCNT" });
+		format.setHeaderDisabled(true);
+		format.setDelimiter(';');
 		return format;
 	}
 
