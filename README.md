@@ -34,27 +34,22 @@ Usage : java -jar ... -file <PATH>\\data.properties -command start -job file");
 ### data.properties
 -Fichier contenant les données de configurations
 
-file.in=C:/Dev/workspace/Camel-Batch/data/in/csv/maif
-file.out=C:/Dev/workspace/Camel-Batch/data/out/json
-
-mongo.host=localhost
-mongo.port=27017
-mongo.database=testCamel
-mongo.collection=personnes
-	
-es.cluster=localhost
-es.host=localhost
-es.port=9300
-es.index=testcamel
-es.type.index=personne
-
-#bactivemq.port=61616
-
-rabbitMQ.port=5672
-rabbitMQ.host=localhost
-rabbitMQ.virtual.host=/
-rabbitMQ.user=guest
-rabbitMQ.password=guest
-rabbitMQ.exchange=testcamel
+	- file.in=C:/Dev/workspace/Camel-Batch/data/in/csv/maif
+	- file.out=C:/Dev/workspace/Camel-Batch/data/out/json
+	- mongo.host=localhost
+	- mongo.port=27017
+	- mongo.database=testCamel
+	- mongo.collection=personnes
+	- es.cluster=localhost
+	- es.host=localhost
+	- es.port=9300
+	- es.index=testcamel
+	- es.type.index=personne
+	- rabbitMQ.port=5672
+	- rabbitMQ.host=localhost
+	- rabbitMQ.virtual.host=/
+	- rabbitMQ.user=guest
+	- rabbitMQ.password=guest
+	- rabbitMQ.exchange=testcamel
 
 
